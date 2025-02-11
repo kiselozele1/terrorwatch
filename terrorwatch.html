@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrorwatch</title>
+    <link rel="stylesheet" href="terrorwatch.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" id="left">
+            <h1 id="additions">Additions</h1>
+            <button class="additions" id="good-fight">Predicted encounter (+5)</button>
+            <button class="additions" id="bad-fight">Unpredicted encounter (+10)</button>
+            <button class="additions" id="misc1">+5</button>
+            <button class="additions" id="misc2">+10</button>
+        </div>
+
+        <div class="main">
+            <div class="environments">
+                <h1 id="envSelect">Select environment:</h1>
+                <button id="normal">Normal</button>
+                <button id="eerie">Eerie</button>
+                <button id="caligo">Caligo</button>
+            </div>
+            <div class="stopwatch">
+                <h1 id="display">00:00:00</h1>
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="reset">Reset</button>
+            </div>
+
+            <div class="terror">
+                <h1>Accumulated Terror:</h1>
+                <p id="terror"></p>
+            </div>
+        </div>
+
+        <div class="sidebar" id="right">
+            <h1 id="reductions">Reductions</h1>
+            <button class="reductors" id="talk">Talking (-5)</button>
+            <button class="reductors" id="comfort">Comfort (-10)</button>
+            <button class="reductors" id="heal">Healing (-10)</button>
+            <button class="reductors" id="city">Known city (-10)</button>
+            <button class="reductors" id="eat">Eating (-5)</button>
+            <button class="reductors" id="pill">Pills (-20)</button>
+        </div>
+    </div>
+    
+    <script type="module" src="terrorwatch.js"></script>
+</body>
+</html>
+

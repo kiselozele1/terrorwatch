@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0c211b;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.environments {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stopwatch {
+    text-align: center;
+    background: #b0f6d9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #f3f4f3;
+}
+
+.terror p {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white; 
+}
+
+button {
+    font-size: 1rem;
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0c211b;
+    color: white;
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #ccc;
+}
+
+div.environments>button {
+    border-width: 3px;
+    border-color: white;
+    border-style: solid
+}
+
+.sidebar {
+    width: 200px;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#b0f6d9
+}
+
+.sidebar>h1 {
+    color: #0c211b;
+    font-size: 2rem;
+}
+
+#left {
+    margin-right: 20px;
+}
+
+#right {
+    margin-left: 20px;
+}
+
+#display {
+    color: black
+}
+
