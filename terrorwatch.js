@@ -86,9 +86,8 @@ function changeEnvironment(btn) {
         intervalTime = 20*1000
     }
 
-    if(intervalTime) {
+    if(intervalTime && isRunning) {
         terrorTimer = setInterval(() => {
-            if(isRunning) {
                 currTerror++;
                 if(currTerror > 100) {
                     currTerror = 100
