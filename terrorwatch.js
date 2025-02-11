@@ -90,6 +90,9 @@ function changeEnvironment(btn) {
         terrorTimer = setInterval(() => {
             if(isRunning) {
                 currTerror++;
+                if(currTerror > 100) {
+                    currTerror = 100
+                }
                 terrorP.textContent = currTerror; 
             }
         }, intervalTime)
@@ -108,6 +111,10 @@ function addTerror(btn) {
         currTerror += 5
     }  else if (ev === 'misc2') {
         currTerror += 10
+    }
+
+    if(currTerror > 100) {
+        currTerror = 100
     }
 
     terrorP.textContent = currTerror
