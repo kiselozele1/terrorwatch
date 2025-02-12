@@ -93,7 +93,6 @@ function changeEnvironment(btn) {
                     currTerror = 100
                 }
                 terrorP.textContent = currTerror; 
-            }
         }, intervalTime)
     }
 
