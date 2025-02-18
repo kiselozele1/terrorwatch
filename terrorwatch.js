@@ -74,7 +74,16 @@ function resetTimer() {
 }
 
 function changeEnvironment(btn) {
+    environmentBtns.forEach(button => {
+        button.style.backgroundColor = ''; 
+        button.style.color = '';
+    });
+    
     environment = btn.textContent.toLowerCase()
+
+    btn.style.color = 'black';
+    btn.style.backgroundColor = 'white';
+    
     clearInterval(terrorTimer)
     
     let intervalTime;
